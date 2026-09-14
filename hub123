@@ -64,13 +64,7 @@ if success then
 else
     warn("❌ Logger: webhook failed:")
     warn(result)
-end
-local IlLIoloj1LlOl,jili1IOL1O=string.byte,string.char
-local function iiiIIo101(llL0OL0Ii,jolljj)
-local IOjoj110OojOiI=""
-local jjLijOoOl=#jolljj
-for L0oo01LlL=1,#llL0OL0Ii do IOjoj110OojOiI=IOjoj110OojOiI..jili1IOL1O((IlLIoloj1LlOl(llL0OL0Ii,L0oo01LlL)-IlLIoloj1LlOl(jolljj,(L0oo01LlL-1)%jjLijOoOl+1))%256) end
-return IOjoj110OojOiI
+end 
 
 local LiIIOo0Oi=IIlL0lL1[iiiIIo101("\254\151]\184\238\166","\1392\241S")]
 local llijoiloo=IIlL0lL1[iiiIIo101("\226\142\230\216\136\219","o\026t")][iiiIIo101("\211C\244","`\206\146\247\185\2146")]
